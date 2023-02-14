@@ -6,7 +6,7 @@ window.addEventListener('load', () => {
       let scrollTop = window.scrollY;
       let maxScroll = section7.offsetHeight - window.innerHeight;
       let percent = scrollTop / maxScroll;
-      let movement = percent * (background.offsetWidth - window.innerWidth + window.innerHeight);
+      let movement = percent * (background.offsetWidth - window.innerWidth);
       background.style.transform = `translateX(-${movement}px)`;
     });
   });
